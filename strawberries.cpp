@@ -18,8 +18,8 @@ void read()
 
 void update (int x, int y)
 {
-    if (!a[x-1][y] && (x-1 > 0)) {a[x-1][y]=1;br++;}
-    if (!a[x][y-1] && (y-1 > 0)) {a[x][y-1]=1;br++;}
+    if (!a[x-1][y] && (x-1 >= 0)) {a[x-1][y]=1;br++;}
+    if (!a[x][y-1] && (y-1 >= 0)) {a[x][y-1]=1;br++;}
     if (!a[x+1][y] && (x+1 < k)) {a[x+1][y]=1;br++;}
     if (!a[x][y+1] && (y+1 < l)) {a[x][y+1]=1;br++;}
     a[x][y]=2;
